@@ -1,0 +1,29 @@
+{
+  "name": "gh-release-notes",
+  "main": "bin/gh-release-notes.js",
+  "version": "0.1.0",
+  "description": "A command line app for getting and applying release notes",
+  "license": "MIT",
+  "repository": "davidahouse/gh-release-notes",
+  "preferGlobal": true,
+  "bin": {
+    "gh-release-notes": "bin/gh-release-notes.js"
+  },
+  "dependencies": {
+    "commander": "^4.0.1",
+    "find": "^0.3.0",
+    "pkginfo": "^0.4.1",
+    "@octokit/app": "^4.1.0",
+    "@octokit/request": "^5.0.2",
+    "@octokit/rest": "^16.28.8"
+  },
+  "devDependencies": {
+    "eslint": "^6.5.1",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^6.5.0"
+  },
+  "scripts": {
+    "lint": "eslint $(find . -name \"*.js\" -not -path \"./node_modules/*\" -not -path \"./public/*\")",
+    "lint-fix": "eslint --fix $(find . -name \"*.js\" -not -path \"./node_modules/*\" -not -path \"./public/*\")"
+  }
+}
