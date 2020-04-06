@@ -11,7 +11,7 @@ program
   .option("-r, --repository <repository>", "Repository name")
   .option("-i, --input <input>", "Input file name if setting release text")
   .option("-o, --output <output>", "Output file for collected release notes")
-  .option("-a, --action <action>", "recent,milestone or update")
+  .option("-a, --action <action>", "recent, milestone or update")
   .option("-t, --hours <hours>", "time in hours")
   .option(
     "-m, --milestone <milestone>",
